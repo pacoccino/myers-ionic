@@ -6,9 +6,9 @@
           <h2 class="title">{{question.question}}</h2>
         </div>
         <div class="button-bar">
-          <a class="button" ng-class=" question.response === -1 ? 'button-stable' : 'button-assertive' " ng-click="response(question, -1)">No</a>
-          <a class="button" ng-class=" question.response === 0  ? 'button-stable' : 'button-energized' " ng-click="response(question, 0)">Neutral</a>
-          <a class="button" ng-class=" question.response === 1  ? 'button-stable' : 'button-balanced'  " ng-click="response(question, 1)">Yes</a>
+          <a class="button" ng-class=" question.result === -1 ? 'button-stable' : 'button-assertive' " ng-click="respond(question, -1)">No</a>
+          <a class="button" ng-class=" question.result === 0  ? 'button-stable' : 'button-energized' " ng-click="respond(question, 0)">Neutral</a>
+          <a class="button" ng-class=" question.result === 1  ? 'button-stable' : 'button-balanced'  " ng-click="respond(question, 1)">Yes</a>
         </div>
       </ion-item>
     </ion-list>

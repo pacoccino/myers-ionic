@@ -1,0 +1,15 @@
+<ion-view view-title="Dashboard">
+    <ion-content class="padding">
+        <div ng-show="!resultScore">
+            Vous n'avez pas encore passé le test.
+        </div>
+        <div ng-show="resultScore">
+
+            Score :
+            {{resultScore.i}}
+            {{resultScore.n}}
+            {{resultScore.t}}
+            {{resultScore.p}}
+        </div>
+    </ion-content>
+</ion-view>
