@@ -13,6 +13,13 @@ application.service('ResultStore', function($rootScope) {
         $rootScope.$broadcast('update.myscore');
     };
 
+    setMyScore({
+        i: -0.5,
+        n: 0.3,
+        t: 1,
+        p: -1
+    });
+
     return {
         myScoreComputed: function() {
             return myScore ? true : false;
