@@ -21,3 +21,68 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.results-bars {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  .result-line {
+    margin-top: 20px;
+    position: relative;
+
+    .line-text {
+      text-align: center;
+      padding: 10px;
+
+      .line-name {
+        font-weight: 600;
+      }
+      .line-score {
+
+      }
+    }
+
+    .bars-line-group {
+      height: 20px;
+      position: relative;
+
+      .bar-middle {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background-color: $dark;
+      }
+
+      .bar-container {
+        display: inline-block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+      }
+      .bar-left-container {
+        right: 50%;
+      }
+      .bar-right-container {
+        left: 50%;
+      }
+
+      .bar-score {
+        position: absolute;
+        height: 100%;
+      }
+
+      .bar-left {
+        right: 0;
+        background-color: $assertive;
+      }
+      .bar-right {
+        left: 1px;
+        background-color: $positive;
+      }
+    }
+
+  }
+}
