@@ -5,11 +5,28 @@
         </div>
         <div ng-show="resultScore">
 
-            Score :
-            {{resultScore.i}}
-            {{resultScore.n}}
-            {{resultScore.t}}
-            {{resultScore.p}}
+            Score :<br/>
+            I: {{resultScore.i}}<br/>
+            N: {{resultScore.n}}<br/>
+            T: {{resultScore.t}}<br/>
+            P: {{resultScore.p}}
+
+            <div class="results-bars">
+                <div class="result-line" ng-repeat="barScore in barScores">
+                    <div class="line-text">
+                        <span class="line-name">{{barScore.name}}</span> : <span class="line-score">{{barScore.score}}%</span>
+                    </div>
+                    <div class="bars-line-group">
+                        <div class="bar-container bar-left-container">
+                            <div class="bar-score bar-left"   ng-style="getBarStyle(barScore, -1)"></div>
+                        </div>
+                        <div class="bar-middle"></div>
+                        <div class="bar-container bar-right-container">
+                            <div class="bar-score bar-right"  ng-style="getBarStyle(barScore, 1)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </ion-content>
 </ion-view>
