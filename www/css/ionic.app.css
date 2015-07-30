@@ -7734,3 +7734,9 @@ a.button {
       .results-bars .result-line .bars-line-group .bar-right {
         left: 1px;
         background-color: #387ef5; }
+
+.test-content .question-list .question-item.highlight {
+  background-color: #fcdfcf; }
+.test-content .question-list .question-item .question {
+  padding-left: 10px;
+  margin-bottom: 5px; }

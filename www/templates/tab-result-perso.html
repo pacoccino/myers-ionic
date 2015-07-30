@@ -1,16 +1,10 @@
-<ion-view view-title="Dashboard">
-    <ion-content class="padding">
+<ion-view view-title="My results">
+    <ion-content class="padding"
+                 scroll="false">
         <div ng-show="!resultScore">
             Vous n'avez pas encore passé le test.
         </div>
         <div ng-show="resultScore">
-
-            Score :<br/>
-            I: {{resultScore.i}}<br/>
-            N: {{resultScore.n}}<br/>
-            T: {{resultScore.t}}<br/>
-            P: {{resultScore.p}}
-
             <div class="results-bars">
                 <div class="result-line" ng-repeat="barScore in barScores">
                     <div class="line-text">

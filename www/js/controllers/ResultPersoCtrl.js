@@ -2,20 +2,7 @@ application.controller('ResultPersoCtrl', function($scope, ResultStore) {
 
     var updateMyScore = function() {
         $scope.resultScore = ResultStore.myScore();
-    };
-
-    $scope.$on("update.myscore", updateMyScore);
-
-    updateMyScore();
-
-    $scope.getBarStyle = function(barScore, orientation) {
-        var style = {};
-
-        if(orientation * barScore.score > 0) {
-            style.width = Math.abs(barScore.score) + '%';
-        }
-
-        return style;
+        computeBarScores();
     };
 
     var computeBarScores = function() {
@@ -39,5 +26,17 @@ application.controller('ResultPersoCtrl', function($scope, ResultStore) {
         ]
     };
 
-    computeBarScores();
+    $scope.getBarStyle = function(barScore, orientation) {
+        var style = {};
+
+        if(orientation * barScore.score > 0) {
+            style.width = Math.abs(barScore.score) + '%';
+        }
+
+        return style;
+    };
+
+    $scope.$on("update.myscore", updateMyScore);
+
+    updateMyScore();
 });

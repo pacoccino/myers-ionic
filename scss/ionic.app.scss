@@ -86,3 +86,18 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
   }
 }
+
+.test-content {
+  .question-list {
+    .question-item {
+      &.highlight {
+        background-color: rgb(252, 223, 207);
+      }
+
+      .question {
+        padding-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
