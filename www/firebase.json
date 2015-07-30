@@ -1,0 +1,9 @@
+{
+  "firebase": "myers-briggs",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
