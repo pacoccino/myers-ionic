@@ -28,6 +28,15 @@ application.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('tab.account', {
+            url: '/account',
+            views: {
+                'tab-account': {
+                    templateUrl: 'templates/tab-account.html',
+                    controller: 'AccountCtrl'
+                }
+            }
+        })
 
         /*
         .state('tab.chats', {
